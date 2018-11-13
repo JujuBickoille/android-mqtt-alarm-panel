@@ -61,7 +61,7 @@
     <string name="preference_title_alarm">Alarme</string>
     <string name="preference_summary_alarm">Paramètres du code de l\'alarme</string>
     <string name="preference_title_pending_time">Temps d\activation</string>
-    <string name="preference_summary_pending_time">La durée avant lequelle l\'alarme sera active ( passage désactivée => active ). Actuellement %1$s secondes.</string>
+    <string name="preference_summary_pending_time">La durée avant lequelle l\'alarme sera active ( Alarme désactivée => alarme active ). Actuellement %1$s secondes.</string>
     <string name="preference_title_trigger_time">Déclanchement de l\'alarme</string>
     <string name="preference_summary_trigger_time">Le temps en seconde avant le déclanchement de l\'alarme. Actuellement de %1$s secondes.</string>
 
@@ -98,11 +98,11 @@
     <string name="preference_title_image_rotation">Image Rotation Interval</string>
     <string name="preference_summary_image_rotation">Time in minutes between image refresh. Currently %1$s.</string>
 
-    <string name="preference_title_web_settings">Browser</string>
+    <string name="preference_title_web_settings">Navigateur</string>
     <string name="preference_summary_web_settings">Allows you to load external home automation dashboard.</string>
     <string name="preference_title_web">Home Automation Dashboard</string>
     <string name="preference_summary_web">Displays your home automation dashboard by swiping main screen.</string>
-    <string name="preference_title_web_url">Dashboard Address</string>
+    <string name="preference_title_web_url">URL par default à afficher</string>
     <string name="preference_summary_web_url">Enter the IP address of your home automation dashboard with prefix and port if needed (example: http://ipaddress:port).</string>
     <string name="preference_web_description">This is an experimental feature. The web page is rendered with Android\'s version of the Chrome Browser and may render differently depending on your Android SDK and WebView versions.</string>
 
@@ -155,7 +155,7 @@
 
     <string name="text_title_system">SYSTÈME</string>
     <string name="text_titled_disarmed">DÉSARMÉ</string>
-    <string name="text_titled_armed_away">Armer Absent</string>
+    <string name="text_titled_armed_away">Armer Absence</string>
     <string name="toast_invalid_coordinates">Invalid latitude and longitude values.</string>
     <string name="toast_invalid_latitude">Value should be between -90 and 90.</string>
     <string name="toast_invalid_longitude">Value should be between -180 and 180.</string>
@@ -164,22 +164,22 @@
     <string name="toast_alarm_deactivated">Alarme désactivée!</string>
     <string name="activity_logs_title">Data Logs</string>
 
-    <string name="text_arm_home">Armer Présent</string>
-    <string name="text_arm_away">Armer Absent</string>
-    <string name="text_armed_home">Armer Présent</string>
-    <string name="text_armed_away">Armer Absent</string>
+    <string name="text_arm_home">PRÉSENCE</string>
+    <string name="text_arm_away">ABSENCE</string>
+    <string name="text_armed_home">Arme\nPrésence</string>
+    <string name="text_armed_away">Armé\nAbsence</string>
     <string name="text_system">SYSTÈME</string>
     <string name="text_disarmed">DÉSARMÉ</string>
     <string name="dialog_alarm_triggered">Entrez votre code pour abandonner</string>
     <string name="dialog_first_time">Il s\'agit du premier lancement, veuillez renseigner vos paramètres MQTT, informations concernant l\'alarme. (Le code par default est: 1234).</string>
-    <string name="text_alarm_pending">Alarme en cours d\'activation...</string>
+    <string name="text_alarm_pending">Alarme en cours d\'activation…</string>
 
     <string name="text_temperature">%1$s %2$s</string>
     <string name="text_temperature_range">H%1$s°  L%2$s°</string>
     <string name="error_mqtt_connection">La connexion MQTT à été interrompue ou n\'a pas été initialisée. Je tente de me reconnecter.</string>
     <string name="error_mqtt_subscription">Je ne peux pas souscrire aux topic MQTT, Veuillez vérifier les paramètres du broker MQTT ou votre connexion réseau</string>
     <string name="text_alarm">ALARME</string>
-    <string name="string_device_location">localisation du périphérique</string>
+    <string name="string_device_location">Localisation du périphérique</string>
     <string name="string_location_services_disabled">Les services de localisation sont désactivés, souhaitez-vous les activer ?</string>
 
     <string name="mail_to_subject_text">MQTT Alarm Panel Feedback</string>
@@ -194,7 +194,7 @@
     <string name="text_reddit">Reddit group</string>
     <string name="text_license_information">License information</string>
     <string name="text_github_code">GitHub code</string>
-    <string name="text_about">About</string>
+    <string name="text_about">A Propos</string>
     <string name="text_alarm_settings">Paramètres de l\'alarme</string>
     <string name="text_mqtt_settings">Paramètres MQTT</string>
     <string name="notification_channel_name">Entry Detection / Alarm Triggered</string>
@@ -244,9 +244,9 @@
     <string name="text_update_available">There is a new update available, would you like to install it now?</string>
     <string name="pref_home_pending_title">Arm Home Pending Time</string>
     <string name="pref_home_pending_summary">The time in seconds before the alarm is set to home mode. Currently %1$s seconds.</string>
-    <string name="pref_delay_title">Disarm Delay Time</string>
-    <string name="pref_delay_summary">The time in seconds to display the disarm dialog before the alarm is triggered unless overridden by the home or away delay times. Currently %1$s seconds.</string>
-    <string name="pref_away_pending_title">Arm Away Pending Time</string>
+    <string name="pref_delay_title">Temps avant le déclenchement de l\'alarme</string>
+    <string name="pref_delay_summary">Le temps en seconde avant le déclenchement de l\'alarme. Actuellement de %1$s secondes.</string>
+    <string name="pref_away_pending_title">Temps activation armement absence</string>
     <string name="pref_away_pending_summary">The time in seconds before the alarm is set to away mode. Currently %1$s seconds.</string>
     <string name="pref_pending_times_description">These times should match those set in your home automation platform. If you do not want to use delay, pending home, pending away times, just set them all to be the same as your pending time. For Home Assistant, review the MQTT manual alarm control panel documentation at https://home-assistant.io/components/alarm_control_panel.manual_mqtt/.</string>
     <string name="pref_home_delay_summary">The time in seconds to display the disarm dialog before the alarm is triggered in alarm home mode. Currently %1$s seconds.</string>
@@ -278,14 +278,14 @@
     <string name="pref_back_behavior_title">Override Back Behavior</string>
     <string name="pref_back_behavior_summary">Android button behaves like browser back button.</string>
     <string name="text_touch_sensor">Touch sensor</string>
-    <string name="dialog_clear_logs">Do you want to clear the logs?</string>
-    <string name="menu_item_clear_logs">Clear logs</string>
-    <string name="sensors_settings">Sensors</string>
-    <string name="button_add_sensor">+ ADD SENSOR</string>
-    <string name="pref_sensor_title">Add Sensor</string>
+    <string name="dialog_clear_logs">Voulez-vous vraiment effaçer les journaux ?</string>
+    <string name="menu_item_clear_logs">Vider les journaux</string>
+    <string name="sensors_settings">Capteurs</string>
+    <string name="button_add_sensor">+ AJOUT CAPTEUR</string>
+    <string name="pref_sensor_title">Ajouter un capteur</string>
     <string name="text_sensor_payload" translatable="false">%1$s / %2$s</string>
     <string name="text_sensor_topic" translatable="false">%1$s</string>
-    <string name="toast_changes_cancelled">Changes cancelled…</string>
+    <string name="toast_changes_cancelled">Changement annulé…</string>
     <string name="error_sensor_empty_data">Sensor must have a topic and both payloads set to be saved.</string>
     <string name="add_sensor_description">Create a list of sensors to receive sensor state changes. For example, create a sound notification if a door is opened or prevent the alarm to be set until a window sensor is closed.</string>
     <string name="text_sensor">Sensor</string>
@@ -353,7 +353,7 @@
     <string name="pref_face_detection_summary">Detects faces using the device\'s camera.</string>
     <string name="pref_face_wake_summary">Turns on the screen when face detected.</string>
     <string name="pref_button_camera_test">Test the camera settings.</string>
-    <string name="toast_qr_code_read">QR Code Read...</string>
+    <string name="toast_qr_code_read">QR Code Read…</string>
     <string name="toast_too_dark_motion">Too dark for motion detection</string>
     <string name="toast_motion_detected">Motion Detected!</string>
     <string name="toast_face_detected">Face Detected!</string>
